@@ -1,0 +1,180 @@
+.hero {
+  height: 90vh;
+}
+
+.hero .image img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.hero .center-info {
+  position: relative;
+  margin: 8% auto 0 auto;
+  width: 60%;
+  height: 50vh;
+  display: -ms-grid;
+  display: grid;
+  min-height: 50vh;
+      grid-template-areas: "left right";
+  -ms-grid-columns: 5fr 4fr;
+      grid-template-columns: 5fr 4fr;
+}
+
+/**/
+/*
+center-left
+*/
+/**/
+.hero .center-info .center-left {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+}
+
+.center-left h1 {
+  font-size: 3.5vw;
+  font-weight: 500;
+}
+
+.center-left h3 {
+  font-weight: 400;
+  font-size: 1vw;
+}
+
+.center-left form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center-left form button {
+  border: none;
+  padding: 1rem;
+  color: #e8505b;
+  font-weight: 600;
+  border-radius: 200px;
+  width: 40%;
+  cursor: pointer;
+  margin: 1vw 0;
+}
+
+/**/
+/*
+center-right
+*/
+/**/
+.hero .center-info .center-right {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  padding: 1.5rem;
+}
+
+.center-right h1 {
+  text-transform: capitalize;
+}
+
+.center-right h1,
+.center-right h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.center-right .center-right-hero {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.center-right em {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.center-right form {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.center-right form .form-row {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.center-right form label {
+  text-align: left;
+  color: #868e96;
+}
+
+.center-right form input {
+  border: none;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.center-right form button {
+  margin-top: 15px;
+  padding: 1rem;
+  background-color: #e8505b;
+  border: none;
+  border-radius: 200px;
+  color: white;
+  font-weight: 500;
+}
+/*# sourceMappingURL=app.component.css.map */
