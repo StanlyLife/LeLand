@@ -1,3 +1,4 @@
+import { TestimonialComponent } from './testiomonials/testimonial.component';
 import { PlansComponent } from './plans/plans.component';
 import { FeatureComponent } from './features/features.component';
 import { TrustedComponent } from './trusted/trusted.component';
@@ -15,6 +16,7 @@ import { AppComponent } from './app.component';
     TrustedComponent,
     FeatureComponent,
     PlansComponent,
+    TestimonialComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

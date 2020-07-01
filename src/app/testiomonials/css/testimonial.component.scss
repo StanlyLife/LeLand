@@ -1,0 +1,112 @@
+.testiomonials {
+  min-height: 650px;
+  position: relative;
+}
+
+.testiomonials .bg {
+  height: 100%;
+  width: 100%;
+}
+.testiomonials .bg img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.testiomonials .slides .arrows {
+  display: flex;
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.slides .arrows a:hover {
+  opacity: 0.5;
+}
+
+.slides .slide {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide .quote {
+  height: 125px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+
+.slide .quote blockquote {
+  margin-top: 50px;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 1.33rem;
+}
+
+.slide .quote blockquote::before {
+  font-size: 2rem;
+  font-weight: 100;
+  content: '"';
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.slide .quote img {
+  position: absolute;
+}
+
+.slide .admissioner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.slide .admissioner h6 {
+  font-weight: 100;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+}
+
+.slides .elipsis {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.slides .elipsis img {
+  padding: 0 1rem;
+  transition: opacity 0.25s ease-out;
+  cursor: pointer;
+}
+
+.slides .elipsis img:hover {
+  opacity: 0.5;
+}
+
+.profile-picture img {
+  border-radius: 500px;
+  background-color: whitesmoke;
+  border: 2px solid #e8505b;
+}
+
+.inactive-slide {
+  display: none !important;
+}

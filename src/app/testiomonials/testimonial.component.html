@@ -1,0 +1,99 @@
+<div class="testiomonials">
+  <div class="bg">
+    <img src="../assets/images/testimonial/Bg.png" alt="" />
+  </div>
+
+  <div class="slides">
+    <div class="slide-elements">
+      <div class="arrows">
+        <img
+          (click)="arrowTestimonial('previous')"
+          src="../assets/images/testimonial/leftArrow.png"
+          id="left-arrow"
+          alt=""
+        />
+        <img
+          (click)="arrowTestimonial('next')"
+          src="../assets/images/testimonial/rightarrow.png"
+          id="right-arrow"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="elipsis">
+      <img
+        *ngIf="slideNumber == 0"
+        src="../assets/images/testimonial/ElipseEmpty.png"
+      />
+      <img
+        *ngIf="slideNumber != 0"
+        src="../assets/images/testimonial/EllipseFull.png"
+        (click)="changeTestimonial(0)"
+      />
+      <img
+        *ngIf="slideNumber == 1"
+        src="../assets/images/testimonial/ElipseEmpty.png"
+      />
+      <img
+        *ngIf="slideNumber != 1"
+        src="../assets/images/testimonial/EllipseFull.png"
+        (click)="changeTestimonial(1)"
+      />
+      <img
+        *ngIf="slideNumber == 2"
+        src="../assets/images/testimonial/ElipseEmpty.png"
+      />
+      <img
+        *ngIf="slideNumber != 2"
+        src="../assets/images/testimonial/EllipseFull.png"
+        (click)="changeTestimonial(2)"
+      />
+    </div>
+    <!-- Slide 1 -->
+    <div *ngIf="slideNumber == 0" class="slide" id="slide-quote-1">
+      <div class="quote">
+        <img src="../assets/images/testimonial/Quote.png" alt="" />
+        <blockquote>
+          This is cool, but it's not radio on the internet..
+        </blockquote>
+      </div>
+      <div class="admissioner">
+        <div class="profile-picture">
+          <img src="../assets/images/profiles/face1.png" alt="" />
+        </div>
+        <h6>- Russ Hanneman @Pied Piper Inc.</h6>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div *ngIf="slideNumber == 1" class="slide" id="slide-quote-2">
+      <div class="quote">
+        <img src="../assets/images/testimonial/Quote.png" alt="" />
+        <blockquote>
+          I don't want to live in a world where someone else is making the world
+          a better place better than we are
+        </blockquote>
+      </div>
+      <div class="admissioner">
+        <div class="profile-picture">
+          <img src="../assets/images/profiles/face2.png" alt="" />
+        </div>
+        <h6>- Gavin Belson @Hooli, CEO</h6>
+      </div>
+    </div>
+    <!-- Slide 3-->
+    <div *ngIf="slideNumber == 2" class="slide" id="slide-quote-3">
+      <div class="quote">
+        <img src="../assets/images/testimonial/Quote.png" alt="" />
+        <blockquote>
+          I love a schotch that's old enough to order its own scotch
+        </blockquote>
+      </div>
+      <div class="admissioner">
+        <div class="profile-picture">
+          <img src="../assets/images/profiles/face3.png" alt="" />
+        </div>
+        <h6>- Robin Scherbatsky @How i met your mother - Television show</h6>
+      </div>
+    </div>
+  </div>
+</div>
