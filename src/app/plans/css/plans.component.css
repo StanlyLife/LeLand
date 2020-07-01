@@ -1,0 +1,256 @@
+.plans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 2.5vh;
+}
+
+.plans .bg {
+  height: 100%;
+  width: 100%;
+}
+
+.plans .bg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+.plans .section-header h1,
+.plans .section-header h2 {
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
+
+.plan-list {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/**/
+/*
+    Card Image
+*/
+/**/
+.plan-card .image-bg {
+  position: relative;
+  width: 370px;
+  height: 242px;
+}
+
+.plan-card .image-bg img {
+  position: absolute;
+  z-index: 0;
+}
+
+.plan-card .image-bg .image-text {
+  color: snow;
+  position: absolute;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.plan-card .image-bg .image-text .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.plan-card .image-bg .image-text .price h1 {
+  font-size: 2.5rem;
+}
+
+.plan-card .image-bg .image-text .price .monthOrYear {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+/**/
+/*
+    CARD
+*/
+/**/
+.card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.plan-card {
+  background-color: snow;
+  margin: 25px;
+  width: 372px;
+  -webkit-box-shadow: 0px 2px 12px 4px rgba(0, 0, 0, 0.22);
+          box-shadow: 0px 2px 12px 4px rgba(0, 0, 0, 0.22);
+}
+
+.plan-card ul {
+  list-style: none;
+  text-align: center;
+}
+
+.plan-card ul li {
+  padding: 1rem 0;
+}
+
+.plan-card ul li:nth-child(2n - 1) {
+  background-color: whitesmoke;
+}
+
+.plan-card form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  min-height: 125px;
+  width: 75%;
+  margin: 0.25rem auto;
+}
+
+.plan-card form button {
+  padding: 1.25rem 1rem;
+  text-align: center;
+  border: none;
+  border-radius: 200px;
+  font-weight: 600;
+  color: #fff;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+  cursor: pointer;
+}
+
+.plan-card:nth-child(1) form button {
+  background-color: #212529;
+}
+
+.plan-card:nth-child(2) form button {
+  background-color: #e8505b;
+  background: #e8505b;
+  background: linear-gradient(229deg, #fc8a7e 0%, #e8505b 100%);
+}
+
+.plan-card:nth-child(3) form button {
+  background-color: #0097b7;
+}
+
+.plan-card form button:hover {
+  background-color: #fc8a7e;
+}
+
+.plan-card:nth-child(2) form button:hover {
+  background: linear-gradient(229deg, #e8505b 100%, #fc8a7e 0%);
+}
+
+.plan-card form em {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+/**/
+/*
+    switch
+*/
+/**/
+.switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.switch p {
+  margin: 15px;
+}
+
+/**/
+/*
+    Section header
+*/
+/**/
+.section-header {
+  text-align: center;
+  padding: 2.5rem;
+}
+
+/**/
+/*
+    Card list footer
+*/
+/**/
+.section-footer {
+  margin: 1vh 0;
+}
+
+.section-footer h2 {
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.section-footer a {
+  text-decoration: none;
+  color: #999;
+}
+
+.section-footer a:hover {
+  color: #e8505b;
+}
+/*# sourceMappingURL=plans.component.css.map */

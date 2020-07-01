@@ -1,0 +1,125 @@
+<div class="plans">
+  <div class="bg">
+    <img src="../assets/images/plans/bg.png" alt="" />
+  </div>
+  <div class="section-header">
+    <h1>No hidden charges, choose your own plan</h1>
+    <h2>Start with a free trial and see what works for you</h2>
+  </div>
+  <div class="plan-list">
+    <div class="switch">
+      <p>Monthly</p>
+      <div class="onoffswitch">
+        <input
+          (ngModel)="(isChecked)"
+          (change)="checkValue(isChecked ? 'year' : 'mo')"
+          type="checkbox"
+          name="onoffswitch"
+          class="onoffswitch-checkbox"
+          id="myonoffswitch"
+          tabindex="0"
+        />
+        <label class="onoffswitch-label" for="myonoffswitch"></label>
+      </div>
+      <p>Yearly</p>
+    </div>
+    <div class="card-list">
+      <!-- Basic -->
+      <div class="plan-card">
+        <div class="header">
+          <div class="image-bg">
+            <div class="image-text">
+              <div class="price">
+                <span>$</span>
+                <h1>{{ tierFree }}</h1>
+                <span class="monthOrYear"
+                  >/<span>{{ price }}</span>
+                </span>
+              </div>
+              <h2>Freelancer</h2>
+            </div>
+            <img src="../assets/images/plans/pricing0.png" alt="" />
+          </div>
+        </div>
+        <ul>
+          <li>SEO tips</li>
+          <li>24/7 support</li>
+          <li>24/7 support</li>
+          <li>24/7 support</li>
+        </ul>
+        <form action="">
+          <button class="plan-one">Get Started</button>
+          <em
+            >try our service for 30 days, free trial, no credit card
+            required</em
+          >
+        </form>
+      </div>
+      <!-- Startup -->
+      <div class="plan-card">
+        <div class="header">
+          <div class="image-bg">
+            <div class="image-text">
+              <div class="price">
+                <span>$</span>
+                <h1>{{ tierStartup }}</h1>
+                <span class="monthOrYear">/{{ price }}</span>
+              </div>
+              <h2>Startup</h2>
+            </div>
+            <img src="../assets/images/plans/price1.png" alt="" />
+          </div>
+        </div>
+        <ul>
+          <li>SEO tips</li>
+          <li>24/7 support</li>
+          <li>24/7 support</li>
+          <li>24/7 support</li>
+        </ul>
+        <form action="">
+          <button class="plan-one">Get Started</button>
+          <em
+            >try our service for 30 days, free trial, no credit card
+            required</em
+          >
+        </form>
+      </div>
+      <!-- Enterprise -->
+      <div class="plan-card">
+        <div class="header">
+          <div class="image-bg">
+            <div class="image-text">
+              <div class="price">
+                <span>$</span>
+                <h1>{{ tierEnterprise }}</h1>
+                <span class="monthOrYear">/{{ price }}</span>
+              </div>
+              <h2>Enterprise</h2>
+            </div>
+            <img src="../assets/images/plans/price2.png" alt="" />
+          </div>
+        </div>
+        <ul>
+          <li>SEO tips</li>
+          <li>24/7 support</li>
+          <li>24/7 support</li>
+          <li>24/7 support</li>
+        </ul>
+        <form action="">
+          <button class="plan-one">Get Started</button>
+          <em
+            >try our service for 30 days, free trial, no credit card
+            required</em
+          >
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="section-footer">
+    <h2>
+      <a href=""
+        >need a custom solution for your organization? contact us here</a
+      >
+    </h2>
+  </div>
+</div>

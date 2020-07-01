@@ -1,3 +1,5 @@
+import { PlansComponent } from './plans/plans.component';
+import { FeatureComponent } from './features/features.component';
 import { TrustedComponent } from './trusted/trusted.component';
 import { NavComponent } from './navigation/nav.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -7,7 +9,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, TrustedComponent],
+  declarations: [
+    AppComponent,
+    NavComponent,
+    TrustedComponent,
+    FeatureComponent,
+    PlansComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
