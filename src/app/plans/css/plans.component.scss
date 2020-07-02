@@ -208,3 +208,18 @@
 .section-footer a:hover {
   color: #e8505b;
 }
+
+/******************************/
+/*
+  Responsive
+*7
+/******************************/
+
+@media only screen and (max-width: 1250px) {
+  .card-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 900px) {
+}

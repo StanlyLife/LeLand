@@ -72,3 +72,26 @@ nav form {
     border: 2px solid whitesmoke;
   }
 }
+
+@media only screen and (max-width: 850px) {
+  nav {
+    width: 98%;
+  }
+
+  form {
+    margin-right: 5vw;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  ul {
+    flex: 2;
+  }
+  .logo {
+    flex: 1;
+  }
+
+  form {
+    opacity: 0;
+  }
+}

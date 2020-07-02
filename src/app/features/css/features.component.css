@@ -6,9 +6,15 @@
 .feature-two,
 .feature-three {
   min-height: 75vh;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .bg img {
+  top: 0;
+  left: 0;
+  right: 0;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -305,5 +311,60 @@ Feature three
 
 .feature-three .panes .pane-two .lower .check p {
   padding: 0 0.5rem;
+}
+
+/******************************/
+/*
+  Responsive
+*7
+/******************************/
+@media only screen and (max-width: 1250px) {
+  .feature-one .info {
+    width: 90%;
+  }
+  .cards {
+    width: 95% !important;
+  }
+  .feature-two .panes,
+  .feature-three .panes {
+    padding: 3rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .feature-three .panes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=features.component.css.map */

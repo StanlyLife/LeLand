@@ -253,4 +253,21 @@
 .section-footer a:hover {
   color: #e8505b;
 }
+
+/******************************/
+/*
+  Responsive
+*7
+/******************************/
+@media only screen and (max-width: 1250px) {
+  .card-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=plans.component.css.map */

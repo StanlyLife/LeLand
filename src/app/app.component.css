@@ -177,4 +177,99 @@ center-right
   color: white;
   font-weight: 500;
 }
+
+/******************************/
+/*
+  Responsive
+*7
+/******************************/
+@media only screen and (max-width: 1250px) {
+  .hero .image img {
+    height: 75%;
+  }
+  .hero {
+    height: 75vh;
+  }
+  .hero .center-info {
+    margin: 8% auto 0 auto;
+    width: 80%;
+    height: 50vh;
+    min-height: 50vh;
+    text-align: center;
+  }
+  .center-left form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hero .image img {
+    height: 90%;
+    width: auto;
+  }
+  .hero .center-info {
+    position: relative;
+    margin: 8% auto 0 auto;
+    width: 95%;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 50vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero .center-info > div {
+    margin: 5vh 0;
+  }
+  .hero .center-info .center-right {
+    -webkit-box-flex: 10;
+        -ms-flex: 10;
+            flex: 10;
+  }
+  .hero .center-info .center-left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-top: 25vh;
+  }
+  .hero .center-info .center-left h1 {
+    font-size: 1.75rem;
+  }
+  .hero .center-info .center-left h3 {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+  .center-left form {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form-row {
+    padding: 0.5rem;
+  }
+}
 /*# sourceMappingURL=app.component.css.map */
