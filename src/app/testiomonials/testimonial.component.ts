@@ -13,7 +13,6 @@ export class TestimonialComponent {
   Carousel() {
     this.interval = setInterval(() => {
       this.slideNumber = (this.slideNumber + 1) % 3;
-      console.log(this.slideNumber);
     }, 5000);
   }
 
