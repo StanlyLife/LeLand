@@ -8,10 +8,9 @@ This project was created to get an introduction to Angular and component based a
 
 <details>
   <summary>Installation</summary>
-  - clone or fork the project
-  - open with angular cli: "ng serve" or "npm start"
-  - play
-  
+   - clone or fork the project <br>
+   - open with angular cli: "ng serve" or "npm start" <br>
+  <br><br>
   📕disclaimer: The image assets used are not included!
 </details>
 
@@ -45,9 +44,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 # LeLand
 </details>
+
 ___
+
 ### Licence
 ###### MIT License
+
 <details>
   <summary>Copyright (c) [2020] [Stian Håve]</summary>
   Permission is hereby granted, free of charge, to any person obtaining a copy
